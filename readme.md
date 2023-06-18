@@ -18,10 +18,8 @@ we make this: <br>
 and, finally, we construct a sentence like <br>
 <i>'brave cats dart effortlessly for good-hearted individuals juggling keenly like mindful nannies openly promoting quick reactions swiftly to unitedly visualize x-rayed zebras androgynously.'</i>
 
-To do that we've used a Spacy NLP library that offers pre-trained language models for various languages; specifically,we've used 'en_core_web_sm' language model which provides various functionalities for processing and analyzing English text,including features like tokenization (that is splitting text into individual words or tokens), part-of-speech tagging, named entity recognition, syntactic parsing, and more.
-
-
-which refers to the English language model with small size.
+To do that we've used a Spacy NLP library that offers pre-trained language models for various languages; specifically,we've used <b>'en_core_web_sm'</b> language model which provides various functionalities for processing and analyzing English text, including features like tokenization (that is splitting text into individual words or tokens), part-of-speech tagging, named entity recognition, syntactic parsing, and more.
+So, we iterate over each letter, and create meaningful sentences while respecting the constraints mentioned above.
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
@@ -35,7 +33,14 @@ spacy==3.3.0
 ```
 
 ## Test coverage
-TODO
+| Name                      | Stmts | Miss | Branch | BrPart | Cover |
+|---------------------------|-------|------|--------|--------|-------|
+| pangram.py                | 9     | 1    | 2      | 1      | 82%   |
+| pangram_generator_test.py | 20    | 1    | 4      | 1      | 92%   |
+| random_pangram.py         | 7     | 0    | 2      | 0      | 100%  |
+| sentence_constructor.py   | 11    | 0    | 2      | 0      | 100%  |
+| **TOTAL**                 | **47**| **2**| **10** | **2**  | **95.74%**|
+
 
 ## License
 
