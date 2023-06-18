@@ -20,12 +20,5 @@ class PangramGeneratorTests(unittest.TestCase):
         self.assertNotIn('abcdefghijklmnopqrstuvwxyz', pangram)
         self.assertEqual(len(pangram.split()), len(input_alphabet))
 
-    # def test_generate_pangram(self):
-    #     pangram = generate_pangram()
-    #     self.assertTrue(pangram[0].isalpha())  # Check if the first character is a letter
-    #     self.assertTrue(pangram.endswith('.'))
-    #     self.assertNotIn('abcdefghijklmnopqrstuvwxyz', pangram)
-    #     self.assertEqual(len(pangram.split()), 26)
-
 if __name__ == '__main__':
     unittest.main()
