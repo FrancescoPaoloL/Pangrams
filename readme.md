@@ -1,5 +1,27 @@
 # Pangrams
-- TODO...
+A Pangram is essentially a sentence that uses all the letters of the alphabet.
+According to <a href="https://en.wikipedia.org/wiki/Pangram" target="blank">Wikipedia</a> the best-known English pangram is <i>"The quick brown fox jumps over the lazy dog".</i>
+This script makes a pangram every time it be executed.
+The idea is simple:
+- a pangram contains words which begins with all the letters of the alphabet;
+- so we make a list with the all alphabet letters
+- we shuffle them and
+- we constrict a sentenceusing every letter in the alphabet list.
+
+Ex.
+Given: <br>
+['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+
+we make this: <br>
+['b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'a']
+
+and, finally, we construct a sentence like <br>
+<i>'brave cats dart effortlessly for good-hearted individuals juggling keenly like mindful nannies openly promoting quick reactions swiftly to unitedly visualize x-rayed zebras androgynously.'</i>
+
+To do that we've used a Spacy NLP library that offers pre-trained language models for various languages; specifically,we've used 'en_core_web_sm' language model which provides various functionalities for processing and analyzing English text,including features like tokenization (that is splitting text into individual words or tokens), part-of-speech tagging, named entity recognition, syntactic parsing, and more.
+
+
+which refers to the English language model with small size.
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
